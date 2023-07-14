@@ -1,0 +1,6 @@
+NODELIST=submit23
+MASTER_ADDR=submit23
+slurmstepd: error: *** STEP 436154.0 ON submit23 CANCELLED AT 2023-06-13T07:04:43 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 436154 ON submit23 CANCELLED AT 2023-06-13T07:04:43 ***
+srun: error: submit23: task 0: Terminated

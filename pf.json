@@ -1,0 +1,46 @@
+{
+    "samples": {
+        "flat_qq": "/uscmst1b_scratch/lpc1/3DayLifetime/emoreno/emoreno/VectorZPrimeAToQQA/",
+        "QCD_HT_1000to1500": "/uscmst1b_scratch/lpc1/3DayLifetime/emoreno/emoreno/QCD_HT1000to1500/",
+        "QCD_HT_1500to2000": "/uscmst1b_scratch/lpc1/3DayLifetime/emoreno/emoreno/QCD_HT1500to2000/",
+        "QCD_HT_2000toInf": "/uscmst1b_scratch/lpc1/3DayLifetime/emoreno/emoreno/QCD_HT2000toInf/",
+        "QCD_HT300to500": "/uscmst1b_scratch/lpc1/3DayLifetime/emoreno/emoreno/QCD_HT300to500/",
+        "QCD_HT500to700": "/uscmst1b_scratch/lpc1/3DayLifetime/emoreno/emoreno/QCD_HT500to700/",
+        "QCD_HT700to1000": "/uscmst1b_scratch/lpc1/3DayLifetime/emoreno/emoreno/QCD_HT700to1000/"
+    },
+    "weight": [
+        "jet_pt", "jet_sdmass"
+    ],
+    "ss_vars": [
+        "jet_eta","jet_phi","jet_EhadOverEem","jet_mass","ecfns_3_2","ecfns_2_1"]
+    ],
+    "N2_vars": [
+        "ecfns_2_1", "ecfns_3_2"
+    ],
+    "features_track": [
+        "pt","eta","phi","charge"
+    ],
+    "features_tower": [
+        "pt","eta","phi"
+    ],
+    "gen_vars": [
+        "gen_eta", "gen_phi", "gen_mass"
+    ],
+    "conversion_track_possiblyproblematic": {
+        "pt": "track_ptrel",
+        "eta": "track_etarel",
+        "phi": "track_phirel",
+        "charge": "track_charge"
+    },
+    "conversion_track": {
+        "pt": "track_ptrel",
+        "eta": "track_etarel",
+        "phi": "track_phirel", 
+        "charge": "track_charge"
+    },
+    "conversion_tower": {
+        "pt": "tower_etrel",
+        "eta": "tower_etarel",
+        "phi": "tower_phirel"
+    }
+}

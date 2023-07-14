@@ -1,0 +1,146 @@
+PN_PFSVE_DISCO200_PEAKY_CAT : 
+    model : "ParticleNetTagger"
+    path : "torch_train/30Oct22_20172018-peaky/PN/models/epoch_59_PN_loss_0.0664_0.0715_acc_0.9627_0.9621.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 4
+    fc_params : [[128,0.1]]
+    event_branch : True
+    n_parts : 100
+    n_vertices : 5
+    n_singletons : 27
+    conv_params : [[7, [32, 32, 32]], [7, [64, 64, 64]]]
+    sv : True
+    sigmoid : False
+    softmax : True
+
+PN_PFSVE_noDISCO_FLAT_CAT :
+    model : "ParticleNetTagger"
+    path : "torch_train/30Oct22_20172018-noDisco/PN/2022_11_10_22_08_00/models/epoch_59_PN_loss_0.2293_0.232_acc_0.8028_0.7998.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 4
+    fc_params : [[128,0.1]]
+    event_branch : True
+    n_parts : 100
+    n_vertices : 5
+    n_singletons : 27
+    conv_params : [[7, [32, 32, 32]], [7, [64, 64, 64]]]
+    sv : True
+    sigmoid : False
+    softmax : True
+
+PN_PFSVE_noDISCO_PEAKY_CAT : 
+    model : "ParticleNetTagger"
+    path : "torch_train/30Oct22_20172018-peaky-noDisco/PN/2022_11_16_22_11_22/models/epoch_49_PN_loss_0.0418_0.0428_acc_0.9684_0.968.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 4
+    fc_params : [[128,0.1]]
+    event_branch : True
+    n_parts : 100
+    n_vertices : 5
+    n_singletons : 27
+    conv_params : [[7, [32, 32, 32]], [7, [64, 64, 64]]]
+    sv : True
+    sigmoid : False
+    softmax : True
+
+PN_PFSVE_DISCO200_FLAT_BINARY : 
+    model : "ParticleNetTagger"
+    path : "torch_train/30Oct22_20172018-binary/PN/2022_11_10_22_12_24/models/epoch_59_PN_loss_0.3615_0.3699_acc_0.8421_0.839.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 2
+    fc_params : [[128,0.1]]
+    event_branch : True
+    n_parts : 100
+    n_vertices : 5
+    n_singletons : 27
+    conv_params : [[7, [32, 32, 32]], [7, [64, 64, 64]]]
+    sv : True
+    sigmoid : False
+    softmax : True
+
+PNv1_PFSVE_DISCO200_FLAT_CAT : 
+    model : "ParticleNetTagger_v1"
+    path : "torch_train/30Oct22_20172018-PNv1/PN/models/epoch_44_PN_loss_0.262_0.273_acc_0.7826_0.7777.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 4
+    fc_params : [[128,0.1],[64,0.1]]
+    event_branch : True
+    n_parts : 100
+    n_vertices : 5
+    n_singletons : 27
+    sv : True
+    conv_params : [[16, [64, 64, 64]],[16, [128, 128, 128]]]
+    sigmoid : False
+    softmax : True
+    
+
+PN_PFSVE_DISCO200_FLAT_3CAT : 
+    model : "ParticleNetTagger"
+    path : "torch_train/30Oct22_20172018-all_vs_QCD/PN/2022_11_09_22_10_45/models/epoch_59_PN_loss_0.3742_0.3816_acc_0.3604_0.3629.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 3
+    fc_params : [[128,0.1]]
+    event_branch : True
+    n_parts : 100
+    n_vertices : 5
+    n_singletons : 27
+    conv_params : [[7, [32, 32, 32]], [7, [64, 64, 64]]]
+    sv : True
+    sigmoid : True
+    softmax : False
+
+PN_PFSVE_DISCO200_FLAT_CAT : 
+    model : "ParticleNetTagger"
+    path : "torch_train/30Oct22_20172018/PN/models/epoch_79_PN_loss_0.2676_0.2767_acc_0.7771_0.7753.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 4
+    fc_params : [[128,0.1]]
+    event_branch : True
+    n_parts : 100
+    n_vertices : 5
+    n_singletons : 27
+    conv_params : [[7, [32, 32, 32]], [7, [64, 64, 64]]]
+    sv : True
+    sigmoid : False
+    softmax : True
+
+IN_PFSVE_DISCO200_FLAT_CAT : 
+    model : "IN"
+    path : "torch_train/30Oct22_20172018/IN_SV_event/2022_11_09_22_11_32/models/epoch_49_IN_SV_event_loss_0.289_0.2969_acc_0.7597_0.759.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 4
+    event_branch : True
+    n_parts : 60
+    n_vertices : 5
+    n_singletons : 27
+    sv : True
+    De : 20
+    Do : 20
+    hidden : 20
+    sigmoid : False
+    softmax : True
+
+INv1_PFSVE_DISCO200_FLAT_CAT : 
+    model : "IN_v1"
+    path : "torch_train/30Oct22_20172018/IN_SV_event/2022_11_10_22_07_46/models/epoch_49_IN_SV_event_loss_0.2786_0.2848_acc_0.7684_0.7689.pth"
+    pf_features_dims : 6
+    sv_features_dims : 13
+    num_classes : 4
+    event_branch : True
+    n_parts : 60
+    n_vertices : 5
+    n_singletons : 27
+    sv : True
+    De : 30
+    Do : 30
+    hidden : 30
+    sigmoid : False
+    softmax : True
